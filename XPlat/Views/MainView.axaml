@@ -72,8 +72,8 @@
 				VerticalAlignment="Center"
 				HorizontalAlignment="Center"
 				Grid.Column="2">
-				<Label FontWeight="Black">Avalonia UI </Label>
-				<Label>Loudness Meter </Label>
+				<Label FontWeight="Black" Content="{Binding BoldTitle}"></Label>
+				<Label Content="{Binding RegularTitle}"></Label>
 			</StackPanel>
 			<Button
 				Grid.Column="3"

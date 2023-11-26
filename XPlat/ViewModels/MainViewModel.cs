@@ -1,8 +1,18 @@
-﻿namespace XPlat.ViewModels;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
 
-public class MainViewModel : ViewModelBase
+namespace XPlat.ViewModels;
+internal partial class MainViewModel : ObservableObject
 {
-#pragma warning disable CA1822 // Mark members as static
-    public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+	[ObservableProperty]
+	private string boldTitle = "Avalonia";
+
+	[ObservableProperty]
+	private string regularTitle = "Loudness Meter";
 }
